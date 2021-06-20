@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@monorepo-template/ui": {
+      "signature": "da4014672eba248e8d7a40fcb45c25f5",
+      "file": true
+    }
+  }
+}

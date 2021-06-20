@@ -1,0 +1,24 @@
+{
+    "name": "monorepo-template",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/carlodevil/monorepo-template.git",
+    "author": "Carlo de Villiers <carlodevil1@gmail.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "install:prod": "yarn install --production --frozen-lockfile",
+        "serve:main": "cd packages/app-main && yarn serve",
+        "serve:landing": "cd packages/app-landing && yarn serve",
+        "serve:landing-build": "cd packages/app-landing && yarn serve:build",
+        "build:main": "cd packages/app-main && yarn build",
+        "build:landing": "cd packages/app-landing && yarn build",
+        "storybook": "cd packages/ui && yarn storybook",
+        "build-storybook": "cd packages/ui && yarn build-storybook",
+        "component": "cd packages/ui && yarn component",
+        "refresh": "cd packages/ui && yalc push"
+    }
+}
